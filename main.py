@@ -1,8 +1,8 @@
 from controllers.cadastro_conta import cadastra_conta
 from controllers.consulta_saldo import consulta_saldo
 from controllers.credito import credito
+from controllers.debito import debito
 from views.menu import menu
-from models.conta import Conta
 
 from models.registros import mostrar_contas
 
@@ -25,6 +25,10 @@ def main():
             valor = float(input("Digite o valor que deseja depositar na conta? [somente números]: "))
             credito(n_conta, valor)
         elif opcao == 5:
+            n_conta = input("Digite o numero da conta que deseja sacar? [somente números]: ")
+            valor = float(input("Digite o valor que deseja sacar da conta? [somente números]: "))
+            debito(n_conta, valor)
+        elif opcao == 6:
             print("Saindo...")
 
         else:

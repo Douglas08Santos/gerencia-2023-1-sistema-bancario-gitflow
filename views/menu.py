@@ -5,5 +5,6 @@ Sistema Bancário 1.0
     [ 2 ] - Listar contas
     [ 3 ] - Consultar saldo
     [ 4 ] - Crédito
-    [ 5 ] - Sair                       
+    [ 5 ] - Débito
+    [ 6 ] - Sair                      
 """
