@@ -1,7 +1,7 @@
 from models.registros import contas
 from models.conta import Conta
 
-def credito(n_conta, valor):
+def credito(n_conta, valor, flag = 0):
     print(f"Crédito: {n_conta}")
 
     # Verificar que o valor passado é negativo, 
@@ -12,9 +12,9 @@ def credito(n_conta, valor):
     
     for conta in contas:
         if conta.n_conta == n_conta:
-            print(f"Saldo anterior ao crédito: {conta.saldo}")
-            conta.credito(valor)
-            print(f"Novo saldo: {conta.saldo}")
+            print(f"Saldo anterior ao crédito:\n{conta}")
+            conta.credito(valor, flag)
+            print(f"Novo saldo:\n{conta}")
             return True
     print("Crédito não adicionado - Conta não cadastrada")
     return False
