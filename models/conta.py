@@ -3,10 +3,10 @@ class Conta:
         self.n_conta = n_conta
         self.saldo = 0.0
 
-    def credito(self, valor):
+    def credito(self, valor, _=0):
         self.saldo += valor
     
-    def debito(self, valor):
+    def debito(self, valor:int):
         self.saldo -= valor
     
     def __eq__(self, other):

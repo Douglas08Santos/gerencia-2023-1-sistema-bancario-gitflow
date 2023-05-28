@@ -13,9 +13,9 @@ def debito(n_conta, valor):
     for conta in contas:
         if conta.n_conta == n_conta:
             if conta.saldo >= valor:
-                print(f"Saldo anterior ao débito: {conta.saldo}")
+                print(f"Saldo anterior ao débito:\n{conta}")
                 conta.debito(valor)
-                print(f"Novo saldo: {conta.saldo}")
+                print(f"Novo saldo:\n{conta}")
                 return True
             else:
                 print(f"Debito não contabilizado - Valor indisponível")
