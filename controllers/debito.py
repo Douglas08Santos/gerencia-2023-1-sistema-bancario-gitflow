@@ -1,5 +1,6 @@
 from models.registros import contas
 from models.conta import Conta
+from models.conta_bonus import Conta_bonus
 
 def debito(n_conta, valor):
     print(f"Débito: {n_conta}")
@@ -13,6 +14,11 @@ def debito(n_conta, valor):
     for conta in contas:
         if conta.n_conta == n_conta:
             if conta.saldo >= valor:
+                print(f"Saldo anterior ao débito:\n{conta}")
+                conta.debito(valor)
+                print(f"Novo saldo:\n{conta}")
+                return True
+            elif (isinstance(conta, Conta) or isinstance(conta, Conta_bonus)) and (conta.saldo - valor) >= -1000:
                 print(f"Saldo anterior ao débito:\n{conta}")
                 conta.debito(valor)
                 print(f"Novo saldo:\n{conta}")
