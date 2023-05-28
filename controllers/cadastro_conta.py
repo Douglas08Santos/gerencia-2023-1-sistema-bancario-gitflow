@@ -19,7 +19,8 @@ def cadastra_conta():
             nova_conta = Conta_bonus(n_conta)
             tipo_conta = '4'
         elif tipo_conta == '3':
-            nova_conta = Conta_poupanca(n_conta)
+            saldo_inicial = float(input("Informe o saldo inicial da conta poupança:"))
+            nova_conta = Conta_poupanca(n_conta, saldo_inicial)
             tipo_conta = '4'
         else:
             print('opção invalida')
