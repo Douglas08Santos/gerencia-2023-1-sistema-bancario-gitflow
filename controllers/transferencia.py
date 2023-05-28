@@ -7,6 +7,12 @@ from controllers.consulta_saldo import consulta_saldo
 def transferencia(n_conta_1, n_conta_2, valor):
     print(f"Transferência: {n_conta_1} => {n_conta_2}")
     
+    # Verificar que o valor passado é negativo, 
+    # se for a função se encerra
+    if valor < 0:
+        print("Transferência não realizada - Valor negativo")
+        return False
+    
     result_1 = False
     result_2 = False
     for conta in contas:
