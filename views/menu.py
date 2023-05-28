@@ -6,5 +6,6 @@ Sistema Bancário 1.0
     [ 3 ] - Consultar saldo
     [ 4 ] - Crédito
     [ 5 ] - Débito
-    [ 6 ] - Sair                      
+    [ 6 ] - Transferência
+    [ 7 ] - Sair                      
 """
