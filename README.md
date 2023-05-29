@@ -51,3 +51,7 @@ em sala de aula
 - As contas podem ter saldo negativo
 - Não existe limite de número de contas que podem ser criadas
 - A conta deve ter apenas os atributos número e saldo
+
+# Para executar
+    
+    python main.py
