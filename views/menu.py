@@ -9,3 +9,11 @@ Sistema Bancário 1.0
     [ 6 ] - Transferência
     [ 7 ] - Sair                      
 """
+
+menu_tipo_conta = """
+Tipo de conta
+    
+    [ 1 ] - Conta Simples
+    [ 2 ] - Conta Bonus
+    [ 3 ] - Sair
+"""
