@@ -14,7 +14,7 @@ class Conta_bonus(Conta):
             return super().credito(valor)
         elif flag == 1:
             print('transferência bonus')
-            self.pontuacao += int(valor//200)
+            self.pontuacao += int(valor//150)
             return super().credito(valor)
         
         return super().credito(valor)
